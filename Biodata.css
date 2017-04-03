@@ -1,8 +1,7 @@
 body
 {
   margin: 0;
-  padding: 0;
-  font-family: 'Macondo', cursive;
+  padding: 0; font-family: 'Macondo', cursive;
 }
 header
 {
@@ -48,16 +47,16 @@ section
   display: flex;
   flex-direction: row;
 }
-.image
+.photo
 {
-  width: 60%;background-color: black;
+  width: 100%;background-color: black;
 }
-.text
+.myself
 {
-  width: 40%;
+  width: 100%;
+  font-size: 30px;
   padding: 2%;
-  font-size: 25px;
-  font-family: 'Macondo', cursive;
+  margin: 0.25%
 }
 footer
 {
