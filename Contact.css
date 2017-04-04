@@ -1,0 +1,152 @@
+body
+{
+  margin: 0;
+  padding: 0 ;font-family: 'Macondo', cursive;
+}
+header
+{
+  width: 100%;
+  background-color: black;
+  display: flex;
+  flex-direction: row;
+}
+.logo
+{
+  width: 10%;
+}
+.logoimg, .prosimg
+{
+  width: 100%;
+}
+.menu
+{
+  width: 90%;
+}
+.menu ul{
+  margin: 0 auto;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+.menu ul li{
+  width: 5%;
+  padding: 5% 2%;
+}
+
+.menu ul li a{
+  color: white;
+  text-decoration: none;
+}
+.menu ul li a:hover{
+  font-size: 20px;
+}
+section
+{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+.rightbar
+{
+  width: 100%;background-color: black; font-family: 'Macondo', cursive;
+}
+.leftbar
+{
+  width: 100%;
+  margin: 0.25%;
+  -webkit-transition: width 2s;
+    transition: width 2s;
+
+}
+footer
+{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+}
+.top
+{
+  width: 100%;
+  color: white;
+}
+.top h1
+{
+  padding-left: 1%;
+}
+.top ul li{
+  list-style: none;
+}
+.top ul
+{
+  margin: 0;
+}
+.sites
+{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+.sites a
+{
+  margin: 0% 1%;
+}
+
+
+@media (max-width:600px)
+{
+  header
+  {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .logo{
+    margin: 0 auto;
+    width: 20%;
+  }
+  .menu
+  {
+    width: 100%;
+    background-color: grey;
+  }
+  .menu ul
+  {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .menu ul li
+  {
+    width: 100%;
+    padding: 3%;
+  }
+  section
+  {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .rightbar
+  {
+    width: 100%;
+  }
+  .leftbar
+  {
+    width: 100%;
+  }
+  .sites
+  {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content:center;
+  }
+  .medias
+  {
+    width: 50%;
+    margin: 0 auto;
+  }
+}
