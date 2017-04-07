@@ -1,87 +1,170 @@
+/*<inside the body margin is given 0 auto according to the size of the screen.padding is also given 0% and font family is used
+as 'Great Vibes', Arial, sans-serif; which is the goggle font>*/
 body
 {
   margin: 0;
-  padding: 0;
-  font-family: 'Macondo', cursive;
+  padding: 0; font-family: 'Raleway', Arial, sans-serif;
 }
+/*<header width is 100% which mean it is feet to the screen and background color is given black.Display is used to flex and
+flex direction is used in the row>*/
 header
 {
   width: 100%;
   background-color: black;
   display: flex;
   flex-direction: row;
+
 }
-.logo
-{
-  width: 10%;
+/*<logo width is given 10%>*/
+
+header img{
+  height: 190px;
+  width: 170px;
+
 }
 .logoimg, .prosimg
 {
   width: 100%;
 }
+
+/*<menu width is given 90%>*/
 .menu
 {
   width: 90%;
 }
+/*<In the menu ul margin is given auto and list style none is  given display is used in the flex
+and flex direction is used in the row and content is justified by giving flex end >*/
 .menu ul{
   margin: 0 auto;
   list-style: none;
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
-}
+  }
+/*<menu ul li width is given 5% and padding is given 5% and 2%>*/
 .menu ul li{
   width: 5%;
   padding: 5% 2%;
+  transition: border-bottom 1s;
+  transition-duration: 1.5s;
 }
+/*<menu ul li a color is used inn white and text decoration is used as none>*/
 
 .menu ul li a{
   color: white;
   text-decoration: none;
 }
-.menu ul li a:hover{
-  font-size: 20px;
+/*<menu ul li a hover is used and font size is given 1.25em which is equal to 19px>*/
+.menu ul li:hover{
+  border-bottom: 12px solid green;
+  background-color: red;
+  transform: scale(1.2);
+
 }
+/*<section width is given 100% which meqan 100% to the size of the screen and display is used in
+flex and flex direction is given in the row>*/
 section
 {
   width: 100%;
   display: flex;
   flex-direction: row;
 }
-.image
-{
-  width: 60%;background-color: black;
+/*<inside the division id is build up and overflow is hidden and height is given 500px and width is given 60%>*/
+#ganesh{
+  overflow:hidden;
+  height:500px;
+  width: 60%;
 }
+/*<inside ganesh id sir id is developed and floatis given left giving width 20%>*/
+#ganesh #sir img{
+  width:20%;
+  float:left;
+}
+/*<inside ganesh id again sir id is developed and postiion is kept relative and width is given 500% and margin is given 500%
+and margin left 0 and font size is given o and text align is given left nad animation is used 9s slider infinate>*/
+#ganesh #sir{
+  position:relative;
+  width:500%;
+  margin:0;
+  left:0;
+  font-size:0;
+  text-align:left;
+  animation:9s slider infinite;
+}
+/*<keyframe is used in the animation name and differnt percentage is given and from left 0to -400% is given>*/
+@keyframes slider {
+  0%{
+    left:0;
+  }
+  20%{
+    left:0;
+  }
+  25%{
+    left:-100%
+  }
+  45%{
+    left:-100%
+  }
+  50%{
+    left:-200%
+  }
+  70%{
+    left:-200%
+  }
+  75%{
+    left:-300%
+  }
+  95%{
+    left:-400%
+  }
+  100%{
+    left:-400%
+  }
+}
+
+
+/*<Inside one division class name text is given by using 40% width and padding is given 2% and font size is used 1.5em and
+ 'Great Vibes', Arial, sans-serif font family is used>*/
 .text
 {
   width: 40%;
   padding: 2%;
-  font-size: 25px;
-  font-family: 'Macondo', cursive;
+  font-size: 1.5em;
+  font-family: 'Raleway', Arial, sans-serif;
 }
+/*<footer width is given as 100% display is used in flex and flex direction is given column which is used for the
+webpage making more responsive.Background color is used in the black>*/
 footer
 {
   width: 100%;
+  position: relative;
+  top: -5px;
   display: flex;
   flex-direction: column;
   background-color: black;
 }
+/*<In top division class width is given 100% and color is used as white.>*/
 .top
 {
   width: 100%;
   color: white;
 }
+/*<In the class top heading 1 padding left is used as 1%>*/
 .top h1
 {
   padding-left: 1%;
 }
+/*<In the class top ul li list style is used as none>*/
 .top ul li{
   list-style: none;
 }
+/*<In the class top ul margin is given 0 auto>*/
 .top ul
 {
-  margin: 0;
+  margin: 0 auto;
 }
+/*<In the division class site width is given 100% and disply is given in the flex and flex direction is given in the
+row and justify content used as flex end>*/
 .sites
 {
   width: 100%;
@@ -89,54 +172,87 @@ footer
   flex-direction: row;
   justify-content: flex-end;
 }
-.sites a
-{
+/*<Inside the site class margin 0% 1% is used >*/
+.sites a{
   margin: 0% 1%;
 }
+.medias img{
+  position: relative;
+  top: -55px;
+  height: 42px;
+  width: 42px;
+  transition:all 1.5s;
+}
+.medias img:hover{
+  transform: rotate(360deg);
+}
 
-
+/*<@media is used for the webpage responsive and max width is us>*/
 @media (max-width:600px)
 {
+  /*<header width is given  100% and display is used as flex and flex direction is given in the column>*/
   header
   {
     width: 100%;
     display: flex;
     flex-direction: column;
   }
-  .logo{
+  /*<inside the @media logo class is given as logo and margin is kept auto and width is given
+  30% and padding is given 42%>*/
+  .logo img{
     margin: 0 auto;
-    width: 20%;
+    height: 96px;
+    padding-left: 42%;
+    width: 30%;
   }
+  #ganesh #sir img {
+    display: none;
+
+  }
+  .text {
+    margin-top: -545px;
+  }
+  
+
+  /*<menu width is given 100% and background color is used as grey*/
   .menu
   {
     width: 100%;
     background-color: grey;
   }
+  /*<menu ul is given 100% width and disply is used in the flex and flex direction is given in the row>*/
   .menu ul
   {
     width: 100%;
     display: flex;
     flex-direction: column;
   }
+  /*<menu ul li is given width 100% and padding is given 3%>*/
   .menu ul li
   {
     width: 100%;
     padding: 3%;
   }
+  /*<section is display in flex and flex direction is used in the column>*/
   section
   {
     display: flex;
     flex-direction: column;
     width: 100%;
   }
-  .image
+  /*<ganesh id is given 100% width>*/
+  .ganesh
   {
     width: 100%;
   }
+  /*<width is given 100% for myself class>*/
   .text
   {
     width: 100%;
+    padding: 5%;
   }
+  /*<Inside the site class display is in flex and flex direction is used for the column and width is given 100% and justify
+  content is in the center>*/
   .sites
   {
     display: flex;
@@ -144,9 +260,18 @@ footer
     width: 100%;
     justify-content:center;
   }
+/*<Inside the media class width is given 50% and margin is used auto*/
+footer{
+  height: 300px;
+}
   .medias
   {
     width: 50%;
     margin: 0 auto;
   }
+  .medias img{
+    position: relative;
+    top: 40px;
+  }
 }
+/*<medias is created by using 50% margin auto and position relative>*/

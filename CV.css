@@ -1,90 +1,133 @@
+/*<inside the body margin is given 0 auto according to the size of the screen.padding is also given 0% and font family is used
+as 'Great Vibes', Arial, sans-serif; which is the goggle font>*/
 body
 {
   margin: 0;
-  padding: 0; font-family: 'Macondo', cursive;
+  padding: 0; font-family: 'Raleway', Arial, sans-serif;
 }
+/*<header width is 100% which mean it is feet to the screen and background color is given black.Display is used to flex and
+flex direction is used in the row>*/
 header
 {
   width: 100%;
   background-color: black;
   display: flex;
   flex-direction: row;
+
 }
-.logo
-{
-  width: 10%;
+/*<logo width is given 10%>*/
+
+header img{
+  height: 190px;
+  width: 170px;
+
 }
-.logoimg, .prosimg
-{
+section img{
   width: 100%;
+  height: 400px;
+  border-radius: 50%;
+  margin-top: 30%;
+  border: 3px solid black;
+  transition-duration: 6s;
+
 }
+section img:hover{
+ transform: rotate(720deg);
+}
+/*<menu width is given 90%>*/
 .menu
 {
   width: 90%;
 }
+/*<In the menu ul margin is given auto and list style none is  given display is used in the flex
+and flex direction is used in the row and content is justified by giving flex end >*/
 .menu ul{
   margin: 0 auto;
   list-style: none;
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
-}
+  }
+/*<menu ul li width is given 5% and padding is given 5% and 2%>*/
 .menu ul li{
   width: 5%;
   padding: 5% 2%;
+  transition: border-bottom 1s;
+  transition-duration: 1.5s;
 }
+/*<menu ul li a color is used inn white and text decoration is used as none>*/
 
 .menu ul li a{
   color: white;
   text-decoration: none;
 }
-.menu ul li a:hover{
-  font-size: 20px;
+/*<menu ul li a hover is used and font size is given 1.25em which is equal to 19px>*/
+.menu ul li:hover{
+  border-bottom: 12px solid green;
+  background-color: red;
+  transform: scale(1.2);
+
 }
+/*<section width is given 100% which meqan 100% to the size of the screen and display is used in
+flex and flex direction is given in the row>*/
 section
 {
   width: 100%;
   display: flex;
   flex-direction: row;
 }
-.leftbar
+.note
 {
-  width: 60%;background-color: black;
+  width: 60%;
 }
+/*<width is given 30% giving margin and padding 0.5% for the article>*/
 .article{
   width: 30%;padding: 0.5%; margin: 0.5%; color: white;
 }
-.main{
-  margin: 1%;padding: 2%;font-size: 25px;
+/*<margin is given1% and padding is given 2% with font size 1.5em for the main class>*/
+.dell{
+  margin: 1%;padding: 2%;font-size: 1.5em;
 }
-.rightbar
+/*<width is used 40% with font size 1.5em for the text with padding 2% and margin 1% for the book class>*/
+.book
 {
-  width: 40%;font-size: 25px;
+  width: 40%;font-size: 1.5em;
   padding: 2%;margin: 1%;
 }
+
+/*<footer width is given as 100% display is used in flex and flex direction is given column which is used for the
+webpage making more responsive.Background color is used in the black>*/
 footer
 {
   width: 100%;
+  position: relative;
+  top: -5px;
   display: flex;
   flex-direction: column;
   background-color: black;
 }
+/*<In top division class width is given 100% and color is used as white.>*/
 .top
 {
   width: 100%;
   color: white;
 }
+/*<In the class top heading 1 padding left is used as 1%>*/
 .top h1
 {
   padding-left: 1%;
 }
+/*<In the class top ul li list style is used as none>*/
 .top ul li{
   list-style: none;
 }
+/*<In the class top ul margin is given 0 auto>*/
 .top ul
 {
-  margin: 0;
+  margin: 0 auto;
 }
+/*<In the division class site width is given 100% and disply is given in the flex and flex direction is given in the
+row and justify content used as flex end>*/
 .sites
 {
   width: 100%;
@@ -92,58 +135,79 @@ footer
   flex-direction: row;
   justify-content: flex-end;
 }
-.sites a
-{
+/*<Inside the site class margin 0% 1% is used >*/
+.sites a{
   margin: 0% 1%;
 }
+.medias img{
+  position: relative;
+  top: -55px;
+  height: 42px;
+  width: 42px;
+  transition:all 1.5s;
+}
+.medias img:hover{
+  transform: rotate(360deg);
+}
 
-
+/*<@media is used for the webpage responsive and max width is us>*/
 @media (max-width:600px)
 {
+  /*<header width is given  100% and display is used as flex and flex direction is given in the column>*/
   header
   {
     width: 100%;
     display: flex;
     flex-direction: column;
   }
-  .logo{
+  /*<inside the @media logo class is given as logo and margin is kept auto and width is given
+  30% and padding is given 42%>*/
+  .logo img{
     margin: 0 auto;
-    width: 20%;
+    height: 96px;
+    padding-left: 42%;
+    width: 30%;
   }
+  /*<menu width is given 100% and background color is used as grey*/
   .menu
   {
     width: 100%;
     background-color: grey;
   }
+  /*<menu ul is given 100% width and disply is used in the flex and flex direction is given in the row>*/
   .menu ul
   {
     width: 100%;
     display: flex;
     flex-direction: column;
   }
+  /*<menu ul li is given width 100% and padding is given 3%>*/
   .menu ul li
   {
     width: 100%;
     padding: 3%;
   }
+  /*<section is display in flex and flex direction is used in the column>*/
   section
   {
     display: flex;
     flex-direction: column;
     width: 100%;
   }
-  .leftbar
+  /*<photo class is given 100% width>*/
+  /*<ganesh id is given 100% width>*/
+  .note
   {
-    width: 100%;font-size: 15px;
+    width: 100%;
   }
-  .rightbar
+  /*<width is given 100% for myself class>*/
+  .book
   {
-    width: 100%;font-size: 15px;}
-
-  .main{
-     width: 100%;font-size: 15px;
-
+    width: 100%;
+    padding: 5%;
   }
+  /*<Inside the site class display is in flex and flex direction is used for the column and width is given 100% and justify
+  content is in the center>*/
   .sites
   {
     display: flex;
@@ -151,9 +215,18 @@ footer
     width: 100%;
     justify-content:center;
   }
+/*<Inside the media class width is given 50% and margin is used auto*/
+footer{
+  height: 300px;
+}
   .medias
   {
     width: 50%;
     margin: 0 auto;
   }
+  .medias img{
+    position: relative;
+    top: 40px;
+  }
 }
+/*<medias is created by using 50% margin auto and position relative>*/

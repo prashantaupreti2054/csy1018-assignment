@@ -1,79 +1,121 @@
+<!--Name:Prashanta Upreti
+UN id:17425083-->
 <!DOCTYPE html>
-<html>
+ <html>
+<!-- <this html tag which help to know that this is the html document or webpage> -->
 <head>
 	<title>My portfolio</title>
-	<link rel="stylesheet" type="text/css" href="Contact.css">
-	<link href="https://fonts.googleapis.com/css?family=Macondo" rel="stylesheet">
+	<meta charset="utf-8">
+	<!-- <title tag is given to know the title of the html document and title of the webpage as portfolio > -->
+	<link rel="stylesheet" type="text/css" href="contact.css">
+	<!-- <link tag is given to connect the css page and html > -->
+	<link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- <link of the goggle font is used> -->
+	<!-- <repsonsive  is made> -->
 </head>
+
+
 <body>
+<!-- <Body tag is for to expalin the content of the document> -->
 <header>
-	<div class="logo"><img src="image/pro.jpg" class="logoimg"></div>
+<!-- <header tag is to keep the heading of the document in the html >-->
+	<a href="index.html"><div class="logo"><img src="image/pro.jpg"  alt="this is the place for the image"></div></a>
+	<!-- < inside the header div class logo is build up and jpg  image is kept inside the logo class .>-->
 	<div class="menu">
+	<!-- < div class menu is used to make the navigation bar and division divide the section into two part >-->
+
 		<ul>
+
+		<!-- <unordered list is used to list the list item  >-->
+		 <!-- <list item tag is used to list the item like home and others > -->
 			<li><a href=index.html>Home</a></li>
-			<li><a href="Biodata.html">Biodata</a></li>
-			<li><a href="CV.html">CV</a></li>
-			<li><a href="Contact.html">Contact</a></li>
+
+
+			<li><a href="biodata.html">Biodata</a></li>
+
+
+			<li><a href="cv.html">CV</a></li>
+
+
+			<li><a href="contact.html">Contact</a></li>
+
 		</ul>
+
 	</div>
+	<!-- <div is closed>-->
 </header>
+<!-- </header tag used to closed the header>-->
 
 <section>
-<div class="Leftbar">
-		<form action="inform_page">
-		<fieldset>
-		<legend>Personal Information</legend>
+<!-- <section tag is used to show the middle part of the content> -->
+	  <div class="coat">
+<!-- < div class coat is used to the to keep the image >-->
+		<form>
 		 <p><label> First Name:</label>
-		<input type="text" name=" first name" placeholder=" FirstName">	
-		<label>Last Name</label>
+		 <!-- <label tag is used to give a usability improvement for mouse users, because if the user clicks on the text within the label element> -->
+		<input type="text" name=" first name" placeholder=" FirstName">
+		<!--< Let the "firstname" input field automatically get focus when the page loads.The formaction attribute is used with type="text"The placeholder attribute works with the following input types: text in this case>-->
+		<br><br><label>Last Name</label>
 		<input type="text" name="last name" placeholder="LastName"></p>
 		<p><label>Country Name: </label>
+		 <!-- <label tag is used to give a usability improvement for mouse users, because if the user clicks on the text within the label element> -->
 		<input type="text" name="country name" placeholder="CountryName"></p>
 		<p>
 			<label>Email Address:</label>
+			 <!-- <label tag is used to give a usability improvement for mouse users, because if the user clicks on the text within the label element> -->
 			<input type="text" name="email address" placeholder="EmailAddress">
+			<!--< Let the "email address" input field automatically get focus when the page loads.The formaction attribute is used with type="text"The placeholder attribute works with the following input types: text in this case>-->
 		</p>
 		<p>
 		<label>Phone Number:</label>
+		 <!-- <label tag is used to give a usability improvement for mouse users, because if the user clicks on the text within the label element> -->
 		<input type="text" name="phone number" placeholder="PhoneNumber">
 		</p>
 		<p>
 			<label>Nick Names:</label>
+			 <!-- <label tag is used to give a usability improvement for mouse users, because if the user clicks on the text within the label element> -->
 			<input type="text" name="nick name" placeholder="NickNames">
 		</p>
-		<p>
-			<label>DOB</label>
-			<input type="date" name="DOB" placeholder="date">
-		</p>
 		<label>Gender</label>
+		 <!-- <label tag is used to give a usability improvement for mouse users, because if the user clicks on the text within the label element> -->
 		<input type="radio" name="gender" value="male">Male
 		<input type="radio" name="gender" value="female">female
-		<input type="radio" name="gender" value="others">Others<br>
-        <textarea name="message" rows="10" cols="30">write anything you like.</textarea>
-         <br>
+		<input type="radio" name="gender" value="others">Others
          <input type="submit">
-         </fieldset>
 		</form>
 		</div>
-		<div class="Rightbar">
-		<div class="image"><img src="image/p.jpg" class="prosimg"></div>
+		<div class="pant">
+		<!-- < div class rightbar is used to the to keep the image >-->
+		<div class="image"><img src="image/p.jpg" alt="pro" class="prosimg"></div>
+		<!-- <  div is used named as image and class is introdue again as prosimg which make easy to keep css managed later on>-->
 		</div>
-    </section>
+
+</section>
+<!-- </section is used which also close the section tag -->
 <footer>
+<!-- <footer tag is used for the foot of the html document -->
 	<div class="top">
+	<!-- <div class top is introduce> -->
 		<h1>Keep in touch</h1>
+		<!-- <unordered list is used to list the list item  >-->
+		<!-- <list item tag is used to list the item like home and others >-->
 		<ul>
 			<li>Location : Narayantar, Jorpati, Nepal</li>
 			<li>Call me : +977-9860112054</li>
 		</ul>
 	</div>
 	<div class="sites">
-	     <a href="http://www.facebook.com/pacific12338@yahoo.com"><div class="medias"><img src="image/d.jpg"></div></a>
-		<a href="https://www.instagram.com/prashantaupreti"><div class="medias"><img src="image/download.jpg"></div></a>
-		<a href="https://www.yahoo.com/pacific12338@yahoo.com"><div class="medias"><img src="image/images.jpg"></div></a>
-
-	</div>
+	<!-- < another div class is introduce as site which link of the different social media site is given>-->
+	     <a href="http://www.facebook.com/pacific12338@yahoo.com"><div class="medias"><img src="image/facebook.gif" alt="facebook logo"></div></a>
+	     <!-- <href tag is used to link the file > -->
+	     <!-- < another div class media is kept and image src is used to keep the image>-->
+		<a href="https://www.instagram.com/prashantaupreti"><div class="medias"><img src="image/Instagram.gif" alt="instagram logo"></div></a>
+		<a href="https://www.goggle.com/pacific12338@gmail.com"><div class="medias"><img src="image/Google+.gif" alt="goggle logo"></div></a>
+  </div>
 </footer>
-
+<!-- <footer is closed> -->
 </body>
+<!-- <body tag is closed or / is used to close the body> -->
 </html>
+<!-- </html tag is used which is used to closed the html tag and html document also end with this tag -->
