@@ -84,8 +84,7 @@ section
   font-size: 1.4em;
   width:40%;
   padding: 0%;
-  text-align: justify-all;
-  font-family: 'Raleway' Arial, sans-serif;
+  font-family: 'Raleway',Arial,sans-serif;
 }
 .myself h1 {
   margin: 0px;
