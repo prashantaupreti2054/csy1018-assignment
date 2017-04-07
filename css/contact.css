@@ -71,8 +71,12 @@ section
   justify-content: space-between;
 }
 .pant{
-  width: 69%;
+  
   margin: auto;
+}
+.pant img {
+	width: 100%;
+	padding-left: 15%;
 }
 
 form{
